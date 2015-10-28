@@ -1,0 +1,6 @@
+c:\users\amargo\documents\visual studio 2013\Projects\Hooker3\Hooker3\bin\Debug\Hooker3.exe.config
+c:\users\amargo\documents\visual studio 2013\Projects\Hooker3\Hooker3\bin\Debug\Hooker3.exe
+c:\users\amargo\documents\visual studio 2013\Projects\Hooker3\Hooker3\bin\Debug\Hooker3.pdb
+c:\users\amargo\documents\visual studio 2013\Projects\Hooker3\Hooker3\obj\Debug\Hooker3.csprojResolveAssemblyReference.cache
+c:\users\amargo\documents\visual studio 2013\Projects\Hooker3\Hooker3\obj\Debug\Hooker3.exe
+c:\users\amargo\documents\visual studio 2013\Projects\Hooker3\Hooker3\obj\Debug\Hooker3.pdb
