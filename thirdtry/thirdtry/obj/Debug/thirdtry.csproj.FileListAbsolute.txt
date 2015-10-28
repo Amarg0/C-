@@ -1,0 +1,6 @@
+C:\Users\Amarg0\Documents\Visual Studio 2013\Projects\thirdtry\thirdtry\bin\Debug\thirdtry.exe.config
+C:\Users\Amarg0\Documents\Visual Studio 2013\Projects\thirdtry\thirdtry\bin\Debug\thirdtry.exe
+C:\Users\Amarg0\Documents\Visual Studio 2013\Projects\thirdtry\thirdtry\bin\Debug\thirdtry.pdb
+C:\Users\Amarg0\Documents\Visual Studio 2013\Projects\thirdtry\thirdtry\obj\Debug\thirdtry.csprojResolveAssemblyReference.cache
+C:\Users\Amarg0\Documents\Visual Studio 2013\Projects\thirdtry\thirdtry\obj\Debug\thirdtry.exe
+C:\Users\Amarg0\Documents\Visual Studio 2013\Projects\thirdtry\thirdtry\obj\Debug\thirdtry.pdb

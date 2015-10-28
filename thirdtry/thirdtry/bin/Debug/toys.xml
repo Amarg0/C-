@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<ArrayOfToy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <toy>
+    <Key>0</Key>
+    <Name>Пикачуха</Name>
+    <Price>201</Price>
+    <Censure>19</Censure>
+  </toy>
+  <toy>
+    <Key>1</Key>
+    <Name>Мяч</Name>
+    <Price>150</Price>
+    <Censure>3</Censure>
+  </toy>
+  <toy>
+    <Key>2</Key>
+    <Name>Погремушка</Name>
+    <Price>50</Price>
+    <Censure>1</Censure>
+  </toy>
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+  <toy xsi:nil="true" />
+</ArrayOfToy>
