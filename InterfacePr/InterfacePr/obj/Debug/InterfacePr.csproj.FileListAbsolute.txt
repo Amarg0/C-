@@ -1,0 +1,6 @@
+c:\users\amarg0\documents\visual studio 2013\Projects\InterfacePr\InterfacePr\bin\Debug\InterfacePr.exe.config
+c:\users\amarg0\documents\visual studio 2013\Projects\InterfacePr\InterfacePr\bin\Debug\InterfacePr.exe
+c:\users\amarg0\documents\visual studio 2013\Projects\InterfacePr\InterfacePr\bin\Debug\InterfacePr.pdb
+c:\users\amarg0\documents\visual studio 2013\Projects\InterfacePr\InterfacePr\obj\Debug\InterfacePr.csprojResolveAssemblyReference.cache
+c:\users\amarg0\documents\visual studio 2013\Projects\InterfacePr\InterfacePr\obj\Debug\InterfacePr.exe
+c:\users\amarg0\documents\visual studio 2013\Projects\InterfacePr\InterfacePr\obj\Debug\InterfacePr.pdb
