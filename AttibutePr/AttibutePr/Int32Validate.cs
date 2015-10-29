@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace AttibutePr
 {
-
-    class Program
+    static class Int32Validate
     {
-        static void Main(string[] args)
+        public static void Validate(object obj)
         {
+            
         }
     }
 }

@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace AttibutePr
 {
-
-    class Program
+    class InvalidValueException:Exception
     {
-        static void Main(string[] args)
-        {
-        }
+
     }
 }
