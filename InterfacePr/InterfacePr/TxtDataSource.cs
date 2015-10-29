@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Security.Cryptography.X509Certificates;
 using System.Text.RegularExpressions;
+using System.Diagnostics;
 
 namespace InterfacePr
 {
@@ -70,18 +71,6 @@ namespace InterfacePr
 
             _groupCounter = int.Parse(lines0);
 
-
-            for (var i = 1; i < _groupCounter + 1; i++)
-                if (Regex.IsMatch(_lines[i], Regex2))
-                {
-                    Groups[_groupsQuant] = new Group(int.Parse(_lines[i].Remove(_lines[i].IndexOf(";"))),
-                        (_lines[i].Substring(_lines[i].IndexOf(";") + 1)).Remove(
-                            (_lines[i].Substring(_lines[i].IndexOf(";") + 1)).IndexOf(";")));
-                    _groupsQuant++;
-                }
-
-
-
             var lines1 = _lines[_groupCounter + 1].Substring(0, 8);
 
             if (String.Compare(lines1, _studentChecker) != 0)
@@ -96,44 +85,72 @@ namespace InterfacePr
                 throw new Exception("Ошибка в первой строке. Count");
 
             _studentCounter = int.Parse(lines1);
-            var regex3 = @"[0-9]{1,2};[0-9]{1,2};\w{2,20};[0-9]{4,4}";
-            for (var i = (_groupCounter + 2); i < _groupCounter + 2 + _studentCounter; i++)
-            {
-                if (!Regex.IsMatch(_lines[i], regex3)) continue;
-                var kusok0 = _lines[i].Remove(_lines[i].IndexOf(";"));
-                var kusok1 = _lines[i].Remove(_lines[i].LastIndexOf(";"));
-                var kusok2 = kusok1.Remove(kusok1.LastIndexOf(";"));
-                var kusok3 = kusok2.Remove(0, kusok0.Length+1);
-                var kusok4 = kusok1.Remove(0, kusok2.Length + 1);
-                var kusok5 = _lines[i].Remove(0, kusok1.Length + 1);
-
-
-                _studentId =int.Parse(kusok0);
-                _studentGroupId = int.Parse(kusok3);
-                _name = kusok4;
-                _enrollYear = int.Parse(kusok5);
-
-                _students[_studentsQuant] = new Student(_studentId,_studentGroupId,_name,_enrollYear);
-                _studentsQuant++;
-            }
-
-            Console.ReadKey();
 
         }
 
         public void Parse()
         {
-            
+            for (var i = 1; i < _groupCounter + 1; i++)
+                if (Regex.IsMatch(_lines[i], Regex2))
+                {
+                    Groups[_groupsQuant] = new Group(int.Parse(_lines[i].Remove(_lines[i].IndexOf(";"))),
+                        (_lines[i].Substring(_lines[i].IndexOf(";") + 1)).Remove(
+                            (_lines[i].Substring(_lines[i].IndexOf(";") + 1)).IndexOf(";")));
+                    _groupsQuant++;
+                }
+
+            for (var i = (_groupCounter + 2); i < _groupCounter + 2 + _studentCounter; i++)
+            {
+                if (!Regex.IsMatch(_lines[i], Regex3)) continue;
+                var kusok0 = _lines[i].Remove(_lines[i].IndexOf(";"));
+                var kusok1 = _lines[i].Remove(_lines[i].LastIndexOf(";"));
+                var kusok2 = kusok1.Remove(kusok1.LastIndexOf(";"));
+                var kusok3 = kusok2.Remove(0, kusok0.Length + 1);
+                var kusok4 = kusok1.Remove(0, kusok2.Length + 1);
+                var kusok5 = _lines[i].Remove(0, kusok1.Length + 1);
+
+
+                _studentId = int.Parse(kusok0);
+                _studentGroupId = int.Parse(kusok3);
+                _name = kusok4;
+                _enrollYear = int.Parse(kusok5);
+
+                _students[_studentsQuant] = new Student(_studentId, _studentGroupId, _name, _enrollYear);
+                _studentsQuant++;
+            }
         }
 
         public void GetData()
         {
-            throw new NotImplementedException();
+            Console.Clear();
+            Console.WriteLine("{0,23}", "ГРУППЫ");
+            Console.WriteLine("----------------------------------------");
+            Console.WriteLine("{0,5}{1,15}{2,20}", "#", "Номер группы", "Описание");
+            Console.WriteLine("----------------------------------------");
+            for (var i = 0; i < _groupsQuant; i++)
+                Console.WriteLine("{0,5}{1,15}{2,20}", i, Groups[i].Id, Groups[i].Description);
+            Console.WriteLine("----------------------------------------");
+
+            Console.WriteLine();
+            Console.WriteLine();
+
+            Console.WriteLine("{0,30}", "СТУДЕНТЫ");
+            Console.WriteLine("-------------------------------------------------------");
+            Console.WriteLine("{0,5}{1,5}{2,15}{3,15}{4,15}", "#", "Id", "Номер группы", "Фамилия", "Год выпуска");
+            Console.WriteLine("-------------------------------------------------------");
+            for (var i = 0; i < _studentsQuant; i++)
+                Console.WriteLine("{0,5}{1,5}{2,15}{3,15}{4,15}", i, _students[i].Id, _students[i].GroupId, _students[i].Name,
+                    _students[i].EnrollYear);
+            Console.WriteLine("-------------------------------------------------------");
+
+            Console.WriteLine();
+            Console.WriteLine();
         }
 
         public void Close(string answer)
         {
-            throw new NotImplementedException();
+            if (answer == "Y")
+                Process.GetCurrentProcess().Kill();
         }
     }
 }

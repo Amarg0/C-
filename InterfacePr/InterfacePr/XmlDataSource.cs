@@ -170,6 +170,7 @@ namespace InterfacePr
 
             Console.WriteLine();
             Console.WriteLine();
+            Console.ReadKey();
 
         }
 

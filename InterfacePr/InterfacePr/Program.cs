@@ -88,6 +88,8 @@ namespace InterfacePr
                                         var txtData = new TxtDataSource(path);
                                         Loader txtLoader = txtData.Open;
                                         txtLoader += txtData.Load;
+                                        txtLoader += txtData.Parse;
+                                        txtLoader += txtData.GetData;
                                         try
                                         {
                                             txtLoader();
@@ -97,6 +99,8 @@ namespace InterfacePr
 
                                             Console.WriteLine("Файл не найден");
                                         }
+                                        Console.WriteLine("Выйти Y/N?");
+                                        txtData.Close(Console.ReadLine());
                                     }
                                 }
                             }

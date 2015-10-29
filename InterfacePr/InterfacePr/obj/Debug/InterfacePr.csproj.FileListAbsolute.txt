@@ -4,3 +4,9 @@ c:\users\amarg0\documents\visual studio 2013\Projects\InterfacePr\InterfacePr\bi
 c:\users\amarg0\documents\visual studio 2013\Projects\InterfacePr\InterfacePr\obj\Debug\InterfacePr.csprojResolveAssemblyReference.cache
 c:\users\amarg0\documents\visual studio 2013\Projects\InterfacePr\InterfacePr\obj\Debug\InterfacePr.exe
 c:\users\amarg0\documents\visual studio 2013\Projects\InterfacePr\InterfacePr\obj\Debug\InterfacePr.pdb
+C:\Users\Amargo\Documents\GitHub\C-\InterfacePr\InterfacePr\bin\Debug\InterfacePr.exe.config
+C:\Users\Amargo\Documents\GitHub\C-\InterfacePr\InterfacePr\obj\Debug\InterfacePr.exe
+C:\Users\Amargo\Documents\GitHub\C-\InterfacePr\InterfacePr\obj\Debug\InterfacePr.pdb
+C:\Users\Amargo\Documents\GitHub\C-\InterfacePr\InterfacePr\obj\Debug\InterfacePr.csprojResolveAssemblyReference.cache
+C:\Users\Amargo\Documents\GitHub\C-\InterfacePr\InterfacePr\bin\Debug\InterfacePr.exe
+C:\Users\Amargo\Documents\GitHub\C-\InterfacePr\InterfacePr\bin\Debug\InterfacePr.pdb
