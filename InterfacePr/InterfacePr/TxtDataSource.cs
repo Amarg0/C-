@@ -99,7 +99,7 @@ namespace InterfacePr
                     _groupsQuant++;
                 }
 
-            for (var i = (_groupCounter + 2); i < _groupCounter + 2 + _studentCounter; i++)
+            for (var i = (_groupCounter + 2); i < (_groupCounter + 2 + _studentCounter); i++)
             {
                 if (!Regex.IsMatch(_lines[i], Regex3)) continue;
                 var kusok0 = _lines[i].Remove(_lines[i].IndexOf(";"));

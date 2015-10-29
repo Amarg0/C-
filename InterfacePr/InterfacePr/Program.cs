@@ -13,7 +13,13 @@ namespace InterfacePr
         
         public static void Menu()
         {
-            Console.WriteLine("1. Загрузить источник данных");
+            Console.WriteLine("------------------------------------");
+            Console.WriteLine("1.XML");
+            Console.WriteLine("------------------------------------");
+            Console.WriteLine("2.SQL");
+            Console.WriteLine("------------------------------------");
+            Console.WriteLine("3.TXT");
+            Console.WriteLine("------------------------------------");
             Console.WriteLine("0. Выход");
         }
 
@@ -24,6 +30,7 @@ namespace InterfacePr
 
         static void Main(string[] args)
         {
+            string path;
             while (true)
             {
                 try
@@ -36,10 +43,7 @@ namespace InterfacePr
                     switch (choice)
                     {
                         case 1:
-                            //Console.WriteLine("Введите путь к файлу:");
-                            //var path = Console.ReadLine();
-
-                            var path = "C:\\Users\\Amarg0\\Desktop\\TXTFile1.txt";
+                            path = "C:\\Users\\Amargo\\Desktop\\XmlDataSource1.xml";
                             if (getFileExtension(path) == "xml")
                             {
                                 Console.WriteLine("XML");
@@ -56,33 +60,39 @@ namespace InterfacePr
                                 {
                                     
                                     Console.WriteLine("Файл не найден");
+                                    Console.ReadKey();
                                 }
                                 Console.WriteLine("Выйти Y/N?");
                                 xmlData.Close(Console.ReadLine());
                             }
-                            else
+                            break;
+                        case 2:
+                            path = "C:\\Users\\Amargo\\Desktop\\SqlDataSource.mdb";
+                            if (getFileExtension(path) == "mdb")
                             {
-                                if (getFileExtension(path) == "mdb")
+                                Console.WriteLine("SQL");
+                                var sqlData = new SqlDataSource(path);
+                                Loader sqlLoader = sqlData.Open;
+                                sqlLoader += sqlData.Load;
+                                sqlLoader += sqlData.Parse;
+                                sqlLoader += sqlData.GetData;
+                                try
                                 {
-                                    Console.WriteLine("SQL");
-                                    var sqlData = new  SqlDataSource(path);
-                                    Loader sqlLoader = sqlData.Open;
-                                    sqlLoader += sqlData.Load;
-                                    sqlLoader += sqlData.Parse;
-                                    sqlLoader += sqlData.GetData;
-                                    try
-                                    {
-                                        sqlLoader();
-                                    }
-                                    catch (FileNotFoundException)
-                                    {
-
-                                        Console.WriteLine("Файл не найден");
-                                    }
+                                    sqlLoader();
                                 }
-                                else
+                                catch (FileNotFoundException)
                                 {
-                                    if (getFileExtension(path) == "txt")
+
+                                    Console.WriteLine("Файл не найден");
+                                }
+                                Console.WriteLine("Выйти Y/N?");
+                                sqlData.Close(Console.ReadLine());
+                            }
+                            break;
+
+                        case 3:
+                            path = "C:\\Users\\Amargo\\Desktop\\TxtDataSource.txt";
+                            if (getFileExtension(path) == "txt")
                                     {
                                         Console.WriteLine("TXT");
                                         var txtData = new TxtDataSource(path);
@@ -102,8 +112,6 @@ namespace InterfacePr
                                         Console.WriteLine("Выйти Y/N?");
                                         txtData.Close(Console.ReadLine());
                                     }
-                                }
-                            }
                             break;
                         default:
                             break;

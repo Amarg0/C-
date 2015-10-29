@@ -59,7 +59,6 @@ namespace InterfacePr
                 
                 Console.WriteLine("Ошибка подключения:{0}",seDbException.Message);
             }
-            Console.WriteLine("Соединение успешно установлено");
             var dset = new DataSet("db");
             using (var myAdapter = new OleDbDataAdapter())
             {
@@ -72,11 +71,6 @@ namespace InterfacePr
 
             }
             
-            //Console.WriteLine(dset.GetXml());
-            //FileStream sqlxml=new FileStream("c:\\users\\amarg0\\desktop\\sqlxml.txt",FileMode.Create);
-            //StreamWriter writer = new StreamWriter(sqlxml);
-            //writer.Write(dset.GetXmlSchema());
-            //writer.Close();
             XDoc = XDocument.Parse(dset.GetXml());
             const string xsdMarkup = @"<?xml version=""1.0"" encoding=""utf-16""?>
 <xs:schema id=""db"" xmlns="""" xmlns:xs=""http://www.w3.org/2001/XMLSchema"" xmlns:msdata=""urn:schemas-microsoft-com:xml-msdata"">
@@ -158,8 +152,6 @@ namespace InterfacePr
                 _students[_studentsQuant]=new Student(_studentId,_studentGroupId,_name,_enrollYear);
                 _studentsQuant++;
             }
-
-            Console.ReadKey();
         }
 
         public void GetData()
@@ -187,7 +179,6 @@ namespace InterfacePr
 
             Console.WriteLine();
             Console.WriteLine();
-            Console.ReadKey();
         }
 
         public void Close(string answer)
