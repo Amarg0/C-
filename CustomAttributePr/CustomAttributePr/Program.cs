@@ -4,18 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AttibutePr
+namespace CustomAttributePr
 {
-
     class Program
     {
         static void Main(string[] args)
         {
-            ExampleClass exampleClass = new ExampleClass(10,5);
-
-            Int32Validate.Validate(exampleClass);
-            Console.ReadKey();
-
         }
     }
 }

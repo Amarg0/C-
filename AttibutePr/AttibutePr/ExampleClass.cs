@@ -6,15 +6,18 @@ using System.Threading.Tasks;
 
 namespace AttibutePr
 {
-    class ExampleClass
+    public class ExampleClass
     {
-        [ValidateInt32(10,2,true)]
-        public int Test1;
+        [ValidateInt32(10, 2, true)]
+        public Int32 Test1 {get;set;}
 
-        [ValidateInt32(20,0,false)]
-        public int Test2;
+        [ValidateInt32(10, 2, true)]
+        public Int32 Test2;
 
-        public string Test3;
-
+        public ExampleClass(int test1, int test2)
+        {
+            Test1 = test1;
+            Test2 = test2;
+        }
     }
 }

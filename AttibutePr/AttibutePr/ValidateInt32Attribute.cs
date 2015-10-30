@@ -9,8 +9,8 @@ namespace AttibutePr
     [AttributeUsage(AttributeTargets.Field|AttributeTargets.Property,AllowMultiple = true)]
     public sealed class ValidateInt32Attribute:Attribute
     {
-        public int MinValue { get; set; }
-        public int MaxValue { get; set; }
+        public Int32 MinValue { get; set; }
+        public Int32 MaxValue { get; set; }
         public bool ZeroEnabled { get; set; }
 
         public ValidateInt32Attribute(int minValue, int maxValue, bool zeroEnabled)
@@ -20,9 +20,20 @@ namespace AttibutePr
             ZeroEnabled = zeroEnabled;
         }
 
+        public int GetMinValue()
+        {
+            return MinValue;
+        }
+
+        public int GetMaxValue()
+        {
+            return MaxValue;
+        }
+
+        public bool GetZeroEnabled()
+        {
+            return ZeroEnabled;
+        }
         public ValidateInt32Attribute() { }
-
-
-
     }
 }
