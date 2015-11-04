@@ -18,5 +18,15 @@ namespace Happy
             Name = name;
             Additional = additional;
         }
+
+        public string ProblemStatus()
+        {
+            if (Status)
+                return "Решена";
+            else
+            {
+                return "Не решена";
+            }
+        }
     }
 }

@@ -43,7 +43,7 @@ namespace Happy
             this.LoginTextbox.Name = "LoginTextbox";
             this.LoginTextbox.Size = new System.Drawing.Size(269, 20);
             this.LoginTextbox.TabIndex = 0;
-            this.LoginTextbox.MouseClick+=new MouseEventHandler(this.LoginTextbox_Click_1);
+            this.LoginTextbox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.LoginTextbox_Click_1);
             // 
             // PasswordTextbox
             // 
@@ -51,7 +51,7 @@ namespace Happy
             this.PasswordTextbox.Name = "PasswordTextbox";
             this.PasswordTextbox.Size = new System.Drawing.Size(269, 20);
             this.PasswordTextbox.TabIndex = 1;
-            this.PasswordTextbox.MouseClick+=new MouseEventHandler(this.PasswordTextbox_Click_1);
+            this.PasswordTextbox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.PasswordTextbox_Click_1);
             // 
             // Password2Textbox
             // 
@@ -59,7 +59,7 @@ namespace Happy
             this.Password2Textbox.Name = "Password2Textbox";
             this.Password2Textbox.Size = new System.Drawing.Size(269, 20);
             this.Password2Textbox.TabIndex = 2;
-            this.Password2Textbox.MouseClick+=new MouseEventHandler(this.Password2Textbox_Click_1);
+            this.Password2Textbox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Password2Textbox_Click_1);
             // 
             // button1
             // 
@@ -69,6 +69,7 @@ namespace Happy
             this.button1.TabIndex = 3;
             this.button1.Text = "ОК";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 

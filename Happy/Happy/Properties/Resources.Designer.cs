@@ -99,6 +99,35 @@ namespace Happy.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Текущая проблема:
+        ///.
+        /// </summary>
+        internal static string ProblemHistory_ProblemHistory_Load_ {
+            get {
+                return ResourceManager.GetString("ProblemHistory_ProblemHistory_Load_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Главная проблема:.
+        /// </summary>
+        internal static string ProblemHistory_ProblemHistory_Load_Главная_проблема_ {
+            get {
+                return ResourceManager.GetString("ProblemHistory_ProblemHistory_Load_Главная_проблема_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Статус:
+        ///.
+        /// </summary>
+        internal static string ProblemHistory_ProblemHistory_Load_Статус_ {
+            get {
+                return ResourceManager.GetString("ProblemHistory_ProblemHistory_Load_Статус_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Введите логин:.
         /// </summary>
         internal static string RegistrationForm_RegistrationForm_Введите_логин_ {

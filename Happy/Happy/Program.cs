@@ -15,6 +15,8 @@ namespace Happy
         [STAThread]
         static void Main()
         {
+            UserBase userBase = new UserBase();
+            object userso = userBase;
             int problemCounter;
             List<Problem> problems = new List<Problem>();
             int UserCounter;
@@ -23,7 +25,7 @@ namespace Happy
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Form1());
-            Application.Run(new Logon());
+            Application.Run(new Logon(userso));
         }
 
 

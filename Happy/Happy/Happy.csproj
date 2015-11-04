@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BussinessLayer.cs" />
     <Compile Include="EnterProblem.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -12,12 +12,13 @@ namespace AttibutePr
     {
         public static void Validate(Object obj)
         {
+            ExampleClass exp = (ExampleClass) obj;
+            Type expType = exp.Test1.GetType();
             //ExampleClass exc = (ExampleClass)obj;
-            System.Attribute[] attrs = System.Attribute.GetCustomAttributes(int);
+            System.Attribute[] attrs = System.Attribute.GetCustomAttributes(expType);
 
             foreach (System.Attribute attr in attrs)
             {
-                Console.WriteLine("Вошёл");
                 if (attr is ValidateInt32Attribute)
                 {
                     ValidateInt32Attribute vi = (ValidateInt32Attribute)attr;

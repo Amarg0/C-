@@ -8,26 +8,32 @@ using System.Xml.Serialization;
 
 namespace Happy
 {
-    internal class UserBase
+    public class UserBase
     {
-        public List<Problem> Problems = new List<Problem>();
+        //public List<User> Users = new List<User>();
+        public User[] Users = new User[1000];
 
         public void Serialize()
         {
-            XmlSerializer serializer = new XmlSerializer(typeof (List<Problem>));
+            XmlSerializer serializer = new XmlSerializer(typeof (User[]));
             using (FileStream file = new FileStream("users.xml", FileMode.Create))
             {
-                serializer.Serialize(file, Problems);
+                serializer.Serialize(file, Users);
             }
         }
 
         public void Deserialize()
         {
-            XmlSerializer serializer = new XmlSerializer(typeof (List<Problem>));
+            XmlSerializer serializer = new XmlSerializer(typeof (User[]));
             using (FileStream fileStream = new FileStream("users.xml", FileMode.OpenOrCreate))
             {
-                Problems = (List<Problem>) serializer.Deserialize(fileStream);
+                Users = (User[]) serializer.Deserialize(fileStream);
             }
+        }
+
+        public bool FileCheck()
+        {
+            return File.Exists("users.xml");
         }
     }
 }

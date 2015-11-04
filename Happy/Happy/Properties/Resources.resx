@@ -152,4 +152,15 @@
   <data name="RegistrationForm_RegistrationForm_Повторите_пароль_" xml:space="preserve">
     <value>Повторите пароль:</value>
   </data>
+  <data name="ProblemHistory_ProblemHistory_Load_" xml:space="preserve">
+    <value>Текущая проблема:
+</value>
+  </data>
+  <data name="ProblemHistory_ProblemHistory_Load_Главная_проблема_" xml:space="preserve">
+    <value>Главная проблема:</value>
+  </data>
+  <data name="ProblemHistory_ProblemHistory_Load_Статус_" xml:space="preserve">
+    <value>Статус:
+</value>
+  </data>
 </root>

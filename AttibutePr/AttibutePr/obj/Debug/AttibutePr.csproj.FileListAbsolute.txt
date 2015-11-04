@@ -5,3 +5,8 @@ C:\Users\Amargo\Documents\GitHub\C-\AttibutePr\AttibutePr\bin\Debug\AttibutePr.e
 C:\Users\Amargo\Documents\GitHub\C-\AttibutePr\AttibutePr\bin\Debug\AttibutePr.pdb
 C:\Users\Amargo\Documents\GitHub\C-\AttibutePr\AttibutePr\obj\Debug\AttibutePr.exe
 C:\Users\Amargo\Documents\GitHub\C-\AttibutePr\AttibutePr\obj\Debug\AttibutePr.pdb
+C:\Users\Amarg0\Documents\GitHub\C-\AttibutePr\AttibutePr\bin\Debug\AttibutePr.exe
+C:\Users\Amarg0\Documents\GitHub\C-\AttibutePr\AttibutePr\bin\Debug\AttibutePr.pdb
+C:\Users\Amarg0\Documents\GitHub\C-\AttibutePr\AttibutePr\obj\Debug\AttibutePr.csprojResolveAssemblyReference.cache
+C:\Users\Amarg0\Documents\GitHub\C-\AttibutePr\AttibutePr\obj\Debug\AttibutePr.exe
+C:\Users\Amarg0\Documents\GitHub\C-\AttibutePr\AttibutePr\obj\Debug\AttibutePr.pdb

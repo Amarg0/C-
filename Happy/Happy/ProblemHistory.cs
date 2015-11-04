@@ -1,16 +1,18 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using Happy.Properties;
 
 namespace Happy
 {
     public partial class ProblemHistory : Form
     {
-        private string Problem { get; set; }
+        private Problem[] _problems;
+        private int _currentProblemNumber = 1;
 
-        public ProblemHistory(string problem)
+        public ProblemHistory(object problemsobj)
         {
-            Problem = problem;
+            _problems = (Problem[]) problemsobj;
             InitializeComponent();
         }
 
@@ -18,18 +20,29 @@ namespace Happy
         {
             panel1.BackColor = Color.Red;
             panel2.BackColor = Color.Green;
-            MainProblem.Text += "\n" + Problem;
-            CurrentProblem.Text += "\n" + Problem;
+            MainProblem.Text = Resources.ProblemHistory_ProblemHistory_Load_Главная_проблема_ + _problems[0].Name;
+            CurrentProblem.Text = Resources.ProblemHistory_ProblemHistory_Load_ + _problems[1].Name;
+            CurrentStatus.Text = Resources.ProblemHistory_ProblemHistory_Load_Статус_ + _problems[1].ProblemStatus();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-
+            if (_currentProblemNumber + 1 == _problems.Length) return;
+            _currentProblemNumber++;
+            CurrentProblem.Text = Resources.ProblemHistory_ProblemHistory_Load_ +
+                                  _problems[_currentProblemNumber].Name;
+            CurrentStatus.Text = Resources.ProblemHistory_ProblemHistory_Load_Статус_ +
+                                 _problems[_currentProblemNumber].ProblemStatus();
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            if (_currentProblemNumber == 1) return;
+            _currentProblemNumber--;
+            CurrentProblem.Text = Resources.ProblemHistory_ProblemHistory_Load_ +
+                                  _problems[_currentProblemNumber].Name;
+            CurrentStatus.Text = Resources.ProblemHistory_ProblemHistory_Load_Статус_ +
+                                 _problems[_currentProblemNumber].ProblemStatus();
         }
     }
 }

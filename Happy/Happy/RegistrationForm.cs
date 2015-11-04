@@ -13,12 +13,15 @@ namespace Happy
 {
     public partial class RegistrationForm : Form
     {
-        public RegistrationForm()
+        UserBase userBase = new UserBase();
+        BussinessLayer bussiness = new BussinessLayer();
+        public RegistrationForm(object users)
         {
             InitializeComponent();
             LoginTextbox.Text = Resources.RegistrationForm_RegistrationForm_Введите_логин_;
             PasswordTextbox.Text = Resources.RegistrationForm_RegistrationForm_Введите_пароль_;
             Password2Textbox.Text = Resources.RegistrationForm_RegistrationForm_Повторите_пароль_;
+            userBase = (UserBase) users;
         }
 
         private void LoginTextbox_Click_1(object sender, EventArgs e)
@@ -43,6 +46,12 @@ namespace Happy
             {
                 Password2Textbox.Text = null;
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (LoginTextbox.Text!=null && PasswordTextbox.Text!=null && Password2Textbox.Text!=null)
+                bussiness.CreateUser(userBase,LoginTextbox.Text,PasswordTextbox.Text);
         }
     }
 }

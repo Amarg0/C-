@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,10 +12,9 @@ namespace AttibutePr
     {
         static void Main(string[] args)
         {
-            ExampleClass exampleClass = new ExampleClass(10,5);
+            var exampleClass = new ExampleClass(10,5);
 
             Int32Validate.Validate(exampleClass);
-            Console.ReadKey();
 
         }
     }

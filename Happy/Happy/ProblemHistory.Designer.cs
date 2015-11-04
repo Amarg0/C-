@@ -35,7 +35,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.CurrentProblem = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.CurrentStatus = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // MainProblem
@@ -55,7 +55,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(543, 10);
             this.panel1.TabIndex = 1;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label2
             // 
@@ -83,6 +82,7 @@
             this.button1.Size = new System.Drawing.Size(50, 69);
             this.button1.TabIndex = 3;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -92,6 +92,7 @@
             this.button2.Size = new System.Drawing.Size(50, 69);
             this.button2.TabIndex = 4;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // CurrentProblem
             // 
@@ -102,24 +103,23 @@
             this.CurrentProblem.TabIndex = 5;
             this.CurrentProblem.Text = "Текущая проблема:";
             this.CurrentProblem.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.CurrentProblem.Click += new System.EventHandler(this.label3_Click);
             // 
-            // label1
+            // CurrentStatus
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(117, 162);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(319, 49);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Состояние:";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.CurrentStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CurrentStatus.Location = new System.Drawing.Point(117, 162);
+            this.CurrentStatus.Name = "CurrentStatus";
+            this.CurrentStatus.Size = new System.Drawing.Size(319, 49);
+            this.CurrentStatus.TabIndex = 6;
+            this.CurrentStatus.Text = "Состояние:";
+            this.CurrentStatus.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // ProblemHistory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(571, 316);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.CurrentStatus);
             this.Controls.Add(this.CurrentProblem);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -143,6 +143,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label CurrentProblem;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label CurrentStatus;
     }
 }
